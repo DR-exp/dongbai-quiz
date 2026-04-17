@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>东百往事 · 人物性格测试 - 你 在 江 湖 是 啥 排 面</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="snow-container" id="snowContainer"></div>
+    
+    <!-- 引导页 -->
+    <div class="page intro-page" id="introPage">
+        <div class="content-wrapper">
+            <h1 class="main-title">东 百 往 事</h1>
+            <p class="subtitle">东百不能没有沈阳大街，就像西方不能失去耶路撒冷</p>
+            
+            <div class="test-info">
+                <p class="info-item">✦ 共 15 题 · 8 位经典人物 ✦</p>
+                <p class="info-item">✦ 测测你是哪位东北狠人 ✦</p>
+            </div>
+            
+            <button class="start-btn" id="startBtn">
+                <span>开 始 整 活</span>
+            </button>
+            
+            <div class="author-info">
+                <p>作者：DR 体验</p>
+            </div>
+            
+            <div class="social-links">
+                <a href="#" class="social-icon">📕</a>
+                <a href="#" class="social-icon">📺</a>
+                <a href="#" class="social-icon">🎵</a>
+            </div>
+            
+            <p class="copyright">© 2026 沈阳大街记录局</p>
+            
+            <p class="disclaimer">本测试纯属个人兴趣制作，无任何商业目的 · 如涉及知识产权问题请联系删除</p>
+        </div>
+    </div>
+    
+    <!-- 答题页 -->
+    <div class="page quiz-page hidden" id="quizPage">
+        <div class="content-wrapper">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <p class="progress-text" id="progressText">0 / 36</p>
+            
+            <div class="question-container">
+                <p class="question-text" id="questionText">加载中...</p>
+            </div>
+            
+            <div class="options-container" id="optionsContainer">
+                <!-- 选项由 JS 动态生成 -->
+            </div>
+            
+            <div class="nav-buttons">
+                <button class="nav-btn" id="prevBtn" disabled>← 上一题</button>
+                <button class="nav-btn" id="nextBtn">下一题 →</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 结果页 -->
+    <div class="page result-page hidden" id="resultPage">
+        <div class="content-wrapper">
+            <h2 class="result-title">你 的 江 湖 身 份</h2>
+            
+            <div class="result-card" id="resultCard">
+                <div class="card-header">
+                    <img src="" alt="" class="character-avatar" id="characterAvatar" />
+                </div>
+                <div class="card-body">
+                    <h3 class="character-name" id="characterName">虎哥</h3>
+                    <p class="character-quote" id="characterQuote">"指定没你好果汁吃嗷！"</p>
+                    <div class="more-quotes" id="moreQuotes"></div>
+                    <div class="match-bar">
+                        <span>匹配度</span>
+                        <div class="match-fill" id="matchFill"></div>
+                        <span class="match-percent" id="matchPercent">85%</span>
+                    </div>
+                    <p class="character-desc" id="characterDesc"></p>
+                    <div class="character-story">
+                        <h4>你的江湖性格</h4>
+                        <p id="characterStoryText"></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="result-actions">
+                <button class="action-btn" id="shareBtn">📤 分享结果</button>
+                <button class="action-btn" id="restartBtn">🔄 再测一次</button>
+            </div>
+            
+            <p class="share-tip">💡 长按图片可保存分享</p>
+            
+            <div class="social-links">
+                <a href="#" class="social-icon">📕</a>
+                <a href="#" class="social-icon">📺</a>
+                <a href="#" class="social-icon">🎵</a>
+            </div>
+            
+            <p class="copyright">© 2026 沈阳大街记录局</p>
+            
+            <p class="disclaimer">本测试纯属个人兴趣制作，无任何商业目的 · 如涉及知识产权问题请联系删除</p>
+        </div>
+    </div>
+    
+    <!-- 分享弹窗 -->
+    <div class="modal hidden" id="shareModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">×</button>
+            <div class="share-card" id="shareCard">
+                <div class="share-header">
+                    <h3>东百往事 · 人物测试</h3>
+                </div>
+                <div class="share-body">
+                    <img src="" alt="" class="share-avatar" id="shareAvatar" />
+                    <p class="share-name" id="shareName"></p>
+                    <p class="share-quote" id="shareQuote"></p>
+                </div>
+                <div class="share-footer">
+                    <p>扫码测测你是哪位东北狠人</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
