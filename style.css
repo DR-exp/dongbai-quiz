@@ -118,12 +118,13 @@ body::before {
 }
 
 .subtitle {
-    font-size: 1.1rem;
-    letter-spacing: 0.2em;
+    font-size: 1rem;
+    letter-spacing: 0.15em;
     color: var(--text-secondary);
     margin-bottom: 35px;
-    line-height: 1.8;
-    padding: 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .test-info {
@@ -200,11 +201,28 @@ body::before {
     z-index: 1;
 }
 
-.author-info {
+.author-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
     color: var(--gold);
     font-size: 0.95rem;
-    margin: 20px 0;
     letter-spacing: 0.1em;
+}
+
+.author-social .social-icon {
+    display: inline-block;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+}
+
+.author-social .social-icon:hover {
+    transform: scale(1.3);
+    filter: drop-shadow(0 0 15px rgba(220, 20, 60, 0.8));
 }
 
 .characters-preview {
@@ -212,10 +230,6 @@ body::before {
     font-size: 0.9rem;
     margin: 20px 0;
     line-height: 1.6;
-}
-
-.social-links {
-    margin: 25px 0;
 }
 
 .social-icon {
@@ -632,28 +646,35 @@ body::before {
 /* ========== 响应式设计 ========== */
 @media (max-width: 480px) {
     .main-title {
-        font-size: 1.8rem;
+        font-size: 2rem;
         letter-spacing: 0.3em;
     }
-    
+
     .subtitle {
         font-size: 0.85rem;
-        letter-spacing: 0.2em;
+        letter-spacing: 0.1em;
+        white-space: normal;
+        text-align: center;
     }
-    
+
     .start-btn {
-        padding: 15px 40px;
-        font-size: 1.1rem;
+        padding: 18px 50px;
+        font-size: 1.3rem;
     }
-    
+
+    .author-social {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
     .question-text {
         font-size: 1.1rem;
     }
-    
+
     .result-actions {
         flex-direction: column;
     }
-    
+
     .action-btn {
         width: 100%;
     }
