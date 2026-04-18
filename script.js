@@ -150,7 +150,7 @@ const characters = [
         ],
         desc: "沈阳大街的传奇人物，东百往事绝对主角。擅长喊话表演，经典语录无数。'我宣布个事儿：我是个傻 O！'一战成名。绿衣是他的标志，与刀哥搭档拍摄了大量经典短视频。白城之战后名声大噪，随后与杀马特团长的沈阳大战更是奠定其江湖地位。",
         story: "你就像虎哥一样，是人群中的焦点人物。遇到事情从不退缩，敢于正面刚，说话办事都讲究个排面。在朋友眼里，你是那个永远冲在最前面的人，有你在就有人罩着。但有时候过于冲动，容易被人当枪使。你的人生信条就是：不服就干，指定没他好果汁吃！",
-        matchTypes: ["aggressive", "social", "showy", "generous"]
+        matchTypes: ["aggressive", "social", "showy", "peaceful"]
     },
     {
         name: "刀哥",
@@ -164,7 +164,7 @@ const characters = [
         ],
         desc: "虎哥的黄金搭档，人狠话不多。绝活是咬打火机，这个名场面流传至今。关键时刻总能稳住局面，是团队里的定海神针。在虎哥情绪激动时，刀哥往往是那个拉他一把的人。沈阳大战中与虎哥并肩作战，共同面对杀马特家族的挑战。",
         story: "你就像刀哥一样，话不多但句句在理。朋友遇到困难时，你是那个默默伸出援手的人，不会说太多漂亮话，但行动永远到位。你做事稳重，不会像某些人那样头脑发热。但真要把你惹急了，咬打火机这种绝活你也干得出来。",
-        matchTypes: ["aggressive", "peaceful", "rational", "independent"]
+        matchTypes: ["aggressive", "rational", "independent", "peaceful"]
     },
     {
         name: "杀马特团长",
@@ -181,14 +181,14 @@ const characters = [
     },
     {
         name: "唐老鸭",
-        avatar: "images/tanglaoya.svg",
+        avatar: "images/tanglaoya.png",
         quotes: [
             "这个弟中之弟！",
             "踢死他！"
         ],
         desc: "虎哥方成员，沈阳大战中被团长擒获。经典台词'弟中之弟'流传甚广，是东百往事中的喜剧担当。被刀哥讲述有《上吊》事件，是团队里的开心果。虽常被调侃，但在团队中有着不可替代的存在感。",
         story: "你就像唐老鸭一样，是朋友圈里的开心果。说话幽默风趣，经常成为大家调侃的对象，但你从不往心里去。你活得通透，知道什么时候该认真，什么时候该装傻。朋友聚会少了你就少了很多乐趣，你是那个让大家开心的人。",
-        matchTypes: ["social", "lazy", "peaceful", "showy"]
+        matchTypes: ["social", "lazy", "generous", "cunning"]
     },
     {
         name: "雷公小亮",
@@ -210,11 +210,11 @@ const characters = [
         ],
         desc: "原是团长方大徒弟，后叛变投靠虎哥。最终给虎哥戴上头套'精神控制'，让他加入杀马特家族，堪称卧底之王。这一操作被粉丝称为'红山果行动'，是沈阳大战中最具戏剧性的转折点。",
         story: "你就像黑牛一样，心思缜密，善于谋划。表面上看你是墙头草，实际上你一直在为自己的利益考虑。你懂得审时度势，知道什么时候该站哪边。朋友说你不够义气，但你自己知道，这只是生存之道。最后的赢家往往是你这种人。",
-        matchTypes: ["cunning", "rational", "independent", "social"]
+        matchTypes: ["cunning", "rational", "independent", "generous"]
     },
     {
         name: "彪姐",
-        avatar: "images/biaojie.svg",
+        avatar: "images/biaojie.png",
         quotes: [
             "彪姐，我爱你，你让我陷入疯狂！",
             "你们别争了",
@@ -222,7 +222,7 @@ const characters = [
         ],
         desc: "虎哥和旋风哥争夺的对象，东百往事中的女性代表人物。'彪姐，我爱你，你让我陷入疯狂！'成为经典表白。她在整个故事中保持着独立的态度，没有完全偏向任何一方，是这场江湖纷争中的关键人物。",
         story: "你就像彪姐一样，在感情和人际关系中保持着独立的态度。有人为你争风吃醋，但你心里清楚自己想要什么。你不是谁的附属品，你有自己的想法和追求。朋友很多，但真正走进你内心的人很少。你活得明白，知道什么该争取，什么该放手。",
-        matchTypes: ["peaceful", "independent", "rational", "social"]
+        matchTypes: ["peaceful", "independent", "rational", "generous"]
     },
     {
         name: "赵三金",
@@ -234,7 +234,19 @@ const characters = [
         ],
         desc: "虎哥在白城之战的对手，生意场上的狠角色。有脑子会算计，黑白两道都给面子，是东百往事中的智囊型人物。与虎哥的白城之战是东百往事前传的重要剧情，这场较量展现了两人之间的恩怨情仇。",
         story: "你就像赵三金一样，是团队里的军师。遇到事情你先算计，不会头脑发热。你懂得人情世故，黑白两道都能说上话。朋友说你太现实，但你自己知道，这才是成年人的生存方式。你的人生信条是：义气要有，但脑子更不能少。",
-        matchTypes: ["cunning", "rational", "aggressive", "generous"]
+        matchTypes: ["cunning", "rational", "aggressive", "social"]
+    },
+    {
+        name: "旋风哥",
+        avatar: "images/xuanfeng.png",
+        quotes: [
+            "你们什么旋风啊？往后稍一稍！",
+            "东百第一基",
+            "吃就完了"
+        ],
+        desc: "以重口味整活视频闻名，代表作'吃粪便配敌敌畏'后被刀哥打假。与彪姐曾为情侣关系，引发虎哥与其的感情争夺战。在'这位更是重量级'名场面中被虎哥喊话宣战。因与多位角色的男酮向互动被称为'东百第一基'。",
+        story: "你就像旋风哥一样，敢于挑战常人无法接受的事物。你不在乎外界眼光，活出自己的风格。在感情上，你执着且占有欲强，对于失去的东西总是念念不忘。朋友说你太极端，但你自己知道，这只是你表达自我的方式。",
+        matchTypes: ["aggressive", "showy", "independent", "generous"]
     }
 ];
 
